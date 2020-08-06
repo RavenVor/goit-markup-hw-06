@@ -470,8 +470,13 @@
 
     <div class="backdrop is-hidden" data-modal>
       <form class="modal-form" action="#" autocomplete="off">
+        <button class="modal-form-close-button" type="button" data-modal-close>
+          <svg class="close-button-svg">
+            <use href="./img/sprite.svg#icon-close-button"></use>
+          </svg>
+        </button>
+
         <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
-        <button type="button" data-modal-close>x</button>
 
         <div class="modal-form-field">
           <input
@@ -482,6 +487,9 @@
             autocomplete="off"
           />
           <label class="modal-form-label" for="user-name">Имя</label>
+          <svg class="modal-form-icon">
+            <use href="./img/sprite.svg#icon-person-black"></use>
+          </svg>
         </div>
         <div class="modal-form-field">
           <input
@@ -492,16 +500,23 @@
             autocomplete="off"
           />
           <label class="modal-form-label" for="user-phone">Телефон</label>
+          <svg class="modal-form-icon">
+            <use href="./img/sprite.svg#icon-phone-black"></use>
+          </svg>
         </div>
         <div class="modal-form-field">
           <input
             class="modal-form-input"
+            icon-email-black
             type="email"
             name="user-email"
             placeholder=" "
             autocomplete="off"
           />
           <label class="modal-form-label" for="user-email">Почта</label>
+          <svg class="modal-form-icon">
+            <use href="./img/sprite.svg#icon-email-black"></use>
+          </svg>
         </div>
 
         <textarea
@@ -509,6 +524,7 @@
           name="user-message"
           placeholder="Коментарый"
         ></textarea>
+
         <label class="modal-form-option-label">
           <input class="modal-form-checkbox" type="checkbox" name="policy" value="accept-policy" />
           <span class="modal-form-custom-checkbox"></span>
@@ -517,7 +533,7 @@
           >
         </label>
 
-        <button type="submit">Отправить</button>
+        <button class="submit-button" type="submit">Отправить</button>
       </form>
     </div>
 
