@@ -64,7 +64,7 @@
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button class="hero-btn btn" data-modal-open>Заказать услугу</button>
+        <button class="hero-btn button" data-modal-open>Заказать услугу</button>
       </section>
       <!-- особливості -->
       <section class="features section">
@@ -457,7 +457,7 @@
           <b class="footer-subtitle desc">Подпишитесь на рассылку</b>
           <div class="footer-form-fild">
             <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" />
-            <button class="footer-form-button" type="submit">
+            <button class="footer-form-button button" type="submit">
               Подписаться
               <svg class="footer-form-svg">
                 <use href="./img/sprite.svg#icon-icon-send"></use>
@@ -482,6 +482,7 @@
           <input
             class="modal-form-input"
             type="text"
+            id="user-name"
             name="user-name"
             placeholder=" "
             autocomplete="off"
@@ -495,11 +496,12 @@
           <input
             class="modal-form-input"
             type="tel"
+            id="user-tel"
             name="user-phone"
             placeholder=" "
             autocomplete="off"
           />
-          <label class="modal-form-label" for="user-phone">Телефон</label>
+          <label class="modal-form-label" for="user-tel">Телефон</label>
           <svg class="modal-form-icon">
             <use href="./img/sprite.svg#icon-phone-black"></use>
           </svg>
@@ -509,6 +511,7 @@
             class="modal-form-input"
             icon-email-black
             type="email"
+            id="user-email"
             name="user-email"
             placeholder=" "
             autocomplete="off"
@@ -522,7 +525,7 @@
         <textarea
           class="modal-form-message"
           name="user-message"
-          placeholder="Коментарый"
+          placeholder="Коментарий"
         ></textarea>
 
         <label class="modal-form-option-label">
@@ -533,7 +536,7 @@
           >
         </label>
 
-        <button class="submit-button" type="submit">Отправить</button>
+        <button class="submit-button button" type="submit">Отправить</button>
       </form>
     </div>
 
